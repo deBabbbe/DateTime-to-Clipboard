@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Windows;
 
 namespace Flow.Launcher.Plugin.DateTimeToClipboard;
 
@@ -16,16 +18,16 @@ public class DateTimeToClipboard : IPlugin
     {
         var result = new Result
         {
-            Title = "Hello World from CSharp",
-            SubTitle = $"Query: {query.Search}",
+            Title = "DateTime to clipboard",
             Action = c =>
             {
-                _context.API.ShowMsg(
-                    "titel",
-                    "subtitel");
+                //_context.API.ShowMsg(
+                //    "titel",
+                //    "subtitel");
+                Clipboard.SetText(DateTime.Now.ToString("yyyy-MM-dd_HH:mm:ss"));
                 return true;
             },
-            IcoPath = "Images/app.png"
+            IcoPath = "icon.png"
         };
         return new List<Result> { result };
     }
