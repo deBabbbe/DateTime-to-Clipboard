@@ -1,0 +1,12 @@
+{
+    "ID": "EF9371C72FC641E5A59B4BA5B487DB06",
+    "ActionKeyword": "*",
+    "Name": "DateTimeToClipboard",
+    "Description": "a new plugin for Flow",
+    "Author": "AuthorName",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/AuthorName/Flow.Launcher.Plugin.DateTimeToClipboard",
+    "IcoPath": "icon.png",
+    "ExecuteFileName": "Flow.Launcher.Plugin.DateTimeToClipboard.dll"
+}
