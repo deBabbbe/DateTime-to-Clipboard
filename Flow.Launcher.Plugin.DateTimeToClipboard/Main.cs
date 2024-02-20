@@ -1,12 +1,19 @@
 using System;
 using System.Collections.Generic;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace Flow.Launcher.Plugin.DateTimeToClipboard;
 
-public class DateTimeToClipboard : IPlugin
+public class DateTimeToClipboard : IPlugin, ISettingProvider
 {
     private PluginInitContext _context;
+
+    public Control CreateSettingPanel()
+    {
+        var control = new ConfigurationView();
+        return control;
+    }
 
     public void Init(PluginInitContext context)
     {

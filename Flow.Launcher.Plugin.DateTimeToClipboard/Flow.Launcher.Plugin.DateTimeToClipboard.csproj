@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0-windows</TargetFramework>
@@ -19,6 +19,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="ConfigurationView.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ConfigurationView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
     <Content Include="plugin.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
